@@ -19,7 +19,7 @@ class App:
 
     def __init__(self) -> None:
         # Initialize Hugging Face API with the provided API key
-        hf_api = HfApi(token="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")
+        hf_api = HfApi(token="")
         # Load the tokenizer and model from the Hugging Face model hub
         self._tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1")
         self._model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1")
